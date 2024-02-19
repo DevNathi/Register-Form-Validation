@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Error: red;
+    --white: #e0e0e0;
+
+
+
+    --fontsize-Paragraphs: 16px;
+}
+body {
+    background: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section {
+    justify-self: center;
+    align-self: center;
+    height: 60%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+    padding: 30px;
+}
+.errors-section {
+    width: 50% !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.errors-section p{
+    font-size: var(--fontsize-Paragraphs);
+    color: var(--Error);
+}
+.errors-section ul{
+    list-style: square;
+}
+.errors-section li{
+    padding: 5px;
+    color: grey;
+}
+
+.form-section {
+    width: 50% !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
