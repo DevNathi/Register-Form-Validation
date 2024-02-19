@@ -49,12 +49,17 @@ section {
     align-items: center;
     gap: 30px;
 }
+.error{
+    height: 10%;
+}
 .errors-section p{
     font-size: var(--fontsize-Paragraphs);
     color: var(--Error);
+    height: 20px;
 }
 .errors-section ul{
     list-style: square;
+
 }
 .errors-section li{
     padding: 5px;

@@ -24,9 +24,9 @@
 
        <form class="form-section" action="" method="post"> 
         <h2>Register</h2>
-        <input type="email" id="email" placeholder="Email" required><br><br>
-        <input type="password" id="password" placeholder="Password" required><br><br>
-        <input type="password" id="confirm" placeholder="Confirm Password" required><br><br>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirm" placeholder="Confirm Password" required>
         <button type="submit" onclick="login()" id="registerBtn" disabled>Register</button>
        </form>
     </section>
@@ -52,8 +52,9 @@
                    errorMessage.textContent = 'Invalid Email Address.'
                     loginButton.disabled = true
                 }
+
             } else {
-                console.log('email value is empty')
+                 errorMessage.textContent = ''
                 loginButton.disabled = true
             }
             
@@ -81,6 +82,7 @@
                     loginButton.disabled = false
                     errorMessage.textContent = ''
                 } else {
+                    
                     loginButton.disabled = true
                 }
             } else {
@@ -126,7 +128,7 @@
             const confirmPass = confirmPassword.value
             const password = passwordInput.value
             if (confirmPass == '') {
-                console.log('confirm field is empty')
+                errorMessage.textContent = '';
             } else {
                 console.log('confirm password is not empty')
                 // Check if the confirm password matches the password
